@@ -14,7 +14,7 @@ const HeroSection = () => {
           </div>
   
           {/* Search Bar */}
-          <div className="bg-white shadow-lg rounded-2xl p-4 md:p-6 flex flex-wrap justify-between items-center space-y-4 md:space-y-0 -mt-8 md:-mt-16 relative z-20 w-full md:w-11/12 mx-auto">
+          <div className="bg-white shadow-lg rounded-2xl p-4 md:p-6 flex flex-wrap justify-between items-center space-y-4 md:space-y-0 -mt-8 md:-mt-16 relative z-20 w-full md:w-9/12 mx-auto">
             <div className="w-full md:w-1/5">
               <label className="block text-gray-700 font-bold mb-1">LOCATION</label>
               <input type="text" className="w-full border border-gray-300 rounded-lg p-2" placeholder="Enter location" />
