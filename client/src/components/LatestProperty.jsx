@@ -31,7 +31,6 @@ const LatestProperties = () => {
           Explore our latest properties and find your dream home.
         </p>
       </div>
-
       {/* Property Cards */}
       <div className="flex flex-wrap justify-center gap-6">
         {properties.slice(0, 8).map((property) => (
