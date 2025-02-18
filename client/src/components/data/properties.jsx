@@ -1,0 +1,133 @@
+const properties = [
+    {
+      id: 1,
+      image: "../assets/properties/area1.jpg",
+      status: "Active",
+      name: "Olympic Valley",
+      location: "Canada, Vancouver",
+      price: "$300,000",
+      beds: 3,
+      baths: 2,
+      area: 325,
+      parking: 1,
+      tokenPrice: "$50",
+      projectedIRR: "26.3%",
+      projectedAPR: "16.3%",
+      link: "/property/1", // Replace with actual route
+      agent: {
+        name: "rachel Green",
+        image: "../assets/agents/agent02.webp",
+        phone: "+1 234 567 890",
+      },
+    },
+    {
+      id: 2,
+      image: "../assets/properties/area1.jpg",
+      status: "Sold",
+      name: "Sunset Hills",
+      location: "USA, California",
+      price: "$450,000",
+      beds: 4,
+      baths: 3,
+      area: 450,
+      parking: 2,
+      tokenPrice: "$75",
+      projectedIRR: "22.5%",
+      projectedAPR: "14.8%",
+      link: "/property/2", // Replace with actual route
+      agent: {
+        name: "Jane Smith",
+        image: "../assets/agents/image.png",
+        phone: "+1 345 678 901",
+      },
+    },
+    {
+      id: 3,
+      image: "../assets/properties/area1.jpg",
+      status: "Active",
+      name: "Green Valley",
+      location: "Australia, Sydney",
+      price: "$500,000",
+      beds: 5,
+      baths: 4,
+      area: 600,
+      parking: 3,
+      tokenPrice: "$100",
+      projectedIRR: "28.7%",
+      projectedAPR: "18.2%",
+      link: "/property/3", // Replace with actual route
+      agent: {
+        name: "Alice Johnson",
+        image: "../assets/agents/agent02.webp",
+        phone: "+1 456 789 012",
+      },
+    },
+    {
+      id: 4,
+      image: "../assets/properties/area1.jpg",
+      status: "Active",
+      name: "Mountain View",
+      location: "USA, Colorado",
+      price: "$400,000",
+      beds: 4,
+      baths: 3,
+      area: 500,
+      parking: 2,
+      tokenPrice: "$80",
+      projectedIRR: "24.5%",
+      projectedAPR: "15.5%",
+      link: "/property/4", // Replace with actual route
+      agent: {
+        name: "Bob Brown",
+        image: "../assets/agents/image.png",
+        phone: "+1 567 890 123",
+      },
+    },
+    {
+      id: 5,
+      image: "../assets/properties/area1.jpg",
+      status: "Sold",
+      name: "Beachfront Villa",
+      location: "Spain, Barcelona",
+      price: "$600,000",
+      beds: 6,
+      baths: 5,
+      area: 700,
+      parking: 3,
+      tokenPrice: "$120",
+      projectedIRR: "30.2%",
+      projectedAPR: "20.1%",
+      link: "/property/5", // Replace with actual route
+      agent: {
+        name: "Charlie Davis",
+        image: "../assets/agents/image.png",
+        phone: "+1 678 901 234",
+      },
+    },
+    {
+      id: 6,
+      image: "../assets/properties/area1.jpg",
+      status: "Active",
+      name: "City Loft",
+      location: "USA, New York",
+      price: "$350,000",
+      beds: 2,
+      baths: 2,
+      area: 300,
+      parking: 1,
+      tokenPrice: "$60",
+      projectedIRR: "20.5%",
+      projectedAPR: "12.8%",
+      link: "/property/6", // Replace with actual route
+      agent: {
+        name: "Eve White",
+        image: "../assets/agents/agent02.webp",
+        phone: "+1 789 012 345",
+      },
+    },
+    
+  ];
+  export default properties;
+
+
+  
