@@ -25,7 +25,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#f5f5f7] text-[#6e6e73] py-[30px]">
+    <footer className="bg-[#f5f5f7]  text-[#6e6e73] py-[30px]">
+      <div className="w-full border-t border-[#d2d2d7] my-4"></div>
       <div className="max-w-[1000px] mx-auto px-[20px]">
         <div className="footer-links flex flex-wrap justify-between mb-[15px]">
           {footerSections.map((section, index) => (
