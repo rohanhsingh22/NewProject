@@ -1,5 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaBed, FaBath, FaCar, FaHeart, FaShareAlt, FaPhone } from "react-icons/fa";
+import {
+  FaBed,
+  FaBath,
+  FaCar,
+  FaHeart,
+  FaShareAlt,
+} from "react-icons/fa";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import cards from "./data/cards";
@@ -94,10 +100,13 @@ export default function PropertyCarousel() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen bg-gray-100 relative group">
+    <div className="flex flex-col items-center justify-center w-screen h-screen bg-gray-100 relative group px-4 sm:px-6">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">Hot Properties</h2>
+        <h2 className="text-3xl font-bold">
+          <span className="text-black">The Hottest Property.</span>
+          <span className="text-gray-500"> All-new, and heartfelt</span>
+        </h2>
       </div>
       {!isTabletOrMobile && showLeftButton && (
         <button
@@ -126,10 +135,10 @@ export default function PropertyCarousel() {
               isTabletOrMobile
                 ? "w-[90%] max-w-[400px] mx-auto"
                 : "min-w-[300px] sm:min-w-[380px] max-w-[300px] sm:max-w-[380px]"
-            } h-[550px] bg-white shadow-lg rounded-2xl p-4 transform transition duration-600 hover:scale-101 hover:shadow-2xl flex-shrink-0`}
+            } rounded-3xl h-[450px] w-[350px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10  bg-white`}
           >
             <div
-              className="relative h-64 bg-cover bg-center rounded-lg"
+              className="relative h-64 bg-cover bg-center rounded-t-3xl "
               style={{ backgroundImage: `url(${card.image})` }}
             >
               <span className="absolute top-2 left-2 bg-white text-green-600 text-sm px-3 py-1 rounded-full">
@@ -211,15 +220,6 @@ export default function PropertyCarousel() {
                     className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
                   >
                     <FaShareAlt className="text-lg" />
-                  </button>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.location.href = `tel:${card.agent.phone}`;
-                    }}
-                    className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
-                  >
-                    <FaPhone className="text-lg" />
                   </button>
                 </div>
               </div>

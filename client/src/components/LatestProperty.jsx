@@ -123,15 +123,6 @@ const LatestProperties = () => {
                   >
                     <FaShareAlt className="text-lg" />
                   </button>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.location.href = `tel:${property.agent.phone}`;
-                    }}
-                    className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
-                  >
-                    <FaPhone className="text-lg" />
-                  </button>
                 </div>
               </div>
             </div>

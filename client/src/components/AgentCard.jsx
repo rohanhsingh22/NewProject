@@ -3,7 +3,7 @@ import { FaHeart, FaShareAlt } from "react-icons/fa";
 
 const AgentCard = ({ img, title, listing }) => {
   return (
-    <div className="rounded-3xl h-[500px] w-[400px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10 relative bg-white">
+    <div className="rounded-3xl h-[500px] w-[400px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10  bg-white">
       {/* Image Container */}
       <div className="relative w-full">
         {/* Main Image */}
