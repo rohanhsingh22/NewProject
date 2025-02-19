@@ -37,7 +37,7 @@ const Listing = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 pt-14 bg-gray-100 min-h-[60vh]">
+    <div className="px-4 sm:px-6  bg-gray-100 min-h-[60vh]">
       <h1 className="text-center text-2xl sm:text-3xl font-semibold">
         Explore Our Listings
       </h1>
@@ -46,7 +46,7 @@ const Listing = () => {
       </p>
 
       {/* Scrollable Card Section */}
-      <div className="relative mt-6 flex items-center ml-24">
+      <div className="relative mt-6 flex items-center ">
         {/* Left Arrow Button */}
 
         <button
