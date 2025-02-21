@@ -105,7 +105,7 @@ export default function PropertyCarousel() {
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">
           <span className="text-black">The Hottest Property.</span>
-          <span className="text-gray-500"> All-new, and heartfelt</span>
+          <span className="text-gray-500"> All-new and heartfelt</span>
         </h2>
       </div>
       {!isTabletOrMobile && showLeftButton && (
