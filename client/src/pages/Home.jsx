@@ -5,6 +5,7 @@ import LatestProperties from '../components/LatestProperty'
 import Services from '../components/Services'
 import Listing from '../components/Listing'
 import Testimonial from '../components/Testimonial'
+import DeveloperCard from '../components/DeveloperCard'
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
       <Listing />
       <Services/>
       <LatestProperties/>
+      <DeveloperCard/>
       <RealEstateAgents/>
       <Testimonial/>
-
     </div>
   )
 }
