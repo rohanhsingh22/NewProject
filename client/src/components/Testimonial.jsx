@@ -124,7 +124,7 @@
 // export default Testimonial;
 
 
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
 
 const Testimonial = () => {
