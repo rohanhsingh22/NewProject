@@ -5,7 +5,6 @@ import property6 from "../../../assets/Property/property6.jpg";
 import property7 from "../../../assets/Property/property7.jpg";
 import property11 from "../../../assets/Property/property11.jpg";
 
-
 const cards = [
   {
     id: 1,
@@ -16,8 +15,10 @@ const cards = [
     price: "$300,000",
     details: { beds: 3, baths: 2, sqft: 325, parking: 1 },
     financials: { tokenPrice: "$50", projectedIRR: "26.3%", projectedAPR: "16.3%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2000, 
     agent: {
-      name: "rachel Green",
+      name: "Rachel Green",
       image: "../assets/agents/agent02.webp",
       phone: "+1 234 567 890",
     },
@@ -31,6 +32,8 @@ const cards = [
     price: "$400,000",
     details: { beds: 4, baths: 3, sqft: 450, parking: 2 },
     financials: { tokenPrice: "$60", projectedIRR: "28.5%", projectedAPR: "18.2%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2005, 
     agent: {
       name: "Jane Smith",
       image: "../assets/agents/image.png",
@@ -46,6 +49,8 @@ const cards = [
     price: "$350,000",
     details: { beds: 2, baths: 2, sqft: 300, parking: 1 },
     financials: { tokenPrice: "$45", projectedIRR: "24.7%", projectedAPR: "15.8%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2010, 
     agent: {
       name: "Alice Johnson",
       image: "../assets/agents/agent02.webp",
@@ -61,6 +66,8 @@ const cards = [
     price: "$450,000",
     details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2015, 
     agent: {
       name: "Bob Brown",
       image: "../assets/agents/image.png",
@@ -76,6 +83,8 @@ const cards = [
     price: "$450,000",
     details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2018, 
     agent: {
       name: "Charlie Davis",
       image: "../assets/agents/image.png",
@@ -91,6 +100,8 @@ const cards = [
     price: "$450,000",
     details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2020, 
     agent: {
       name: "Eve White",
       image: "../assets/agents/agent02.webp",
@@ -106,6 +117,8 @@ const cards = [
     price: "$450,000",
     details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2022, 
     agent: {
       name: "Bob Brown",
       image: "../assets/agents/image.png",
