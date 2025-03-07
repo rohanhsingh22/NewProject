@@ -169,7 +169,8 @@ const Testimonial = () => {
       setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, 
+);
 
   return (
     <div className="bg-gray-100 py-12 mt-4 px-4">
@@ -236,7 +237,7 @@ const Testimonial = () => {
             className="text-lg text-gray-700 mt-4 italic h-[80px] overflow-hidden text-ellipsis px-4"
             style={{ display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical" }}
           >
-            "{testimonials[index].feedback}"
+            {testimonials[index].feedback}
           </p>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">
             {testimonials[index].name}

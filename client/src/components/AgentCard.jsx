@@ -1,11 +1,10 @@
-import React from "react";
 import { FaHeart, FaShareAlt } from "react-icons/fa";
-
+import PropTypes from "prop-types";
 const AgentCard = ({ img, title, listing }) => {
   return (
     <div className="rounded-3xl h-[500px] w-[400px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10  bg-white">
       {/* Image Container */}
-      <div className="relative w-full">
+      <div className="relative">
         {/* Main Image */}
         <img src={img} alt={title} className="h-[250px] w-[400px] rounded-t-3xl" />
         
@@ -45,6 +44,11 @@ const AgentCard = ({ img, title, listing }) => {
       </div>
     </div>
   );
+};
+AgentCard.propTypes = {
+  img: PropTypes.func.isRequired,
+  title: PropTypes.func.isRequired,
+  listing: PropTypes.func.isRequired,
 };
 
 export default AgentCard;
