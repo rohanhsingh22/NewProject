@@ -5,7 +5,6 @@ import property6 from "../../../assets/Property/property6.jpg";
 import property7 from "../../../assets/Property/property7.jpg";
 import property11 from "../../../assets/Property/property11.jpg";
 
-
 const cards = [
   {
     id: 1,
@@ -14,13 +13,47 @@ const cards = [
     title: "Olympic Valley",
     location: "Canada, Vancouver",
     price: "$300,000",
-    details: { beds: 3, baths: 2, sqft: 325, parking: 1 },
+    details: { 
+      beds: 3, 
+      baths: 2, 
+      sqft: 325, 
+      parking: 1,
+      propertyId: "21135",
+      lotSize: "2,000 ft2",
+      extraDetails: "garden",
+      structureType: "Wood",
+      rooms: 2,
+      customId: "123",
+      garageSize: "20 cars",
+      roofing: "new",
+      floorsNo: 3,
+      propertySize: "1,900 ft2",
+      garages: 20,
+      availableFrom: "2017-01-26",
+      exteriorMaterial: "brick"
+    },
     financials: { tokenPrice: "$50", projectedIRR: "26.3%", projectedAPR: "16.3%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2000,
     agent: {
-      name: "rachel Green",
+      name: "Rachel Green",
       image: "../assets/agents/agent02.webp",
       phone: "+1 234 567 890",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 2,
@@ -29,13 +62,47 @@ const cards = [
     title: "Mountain View",
     location: "USA, California",
     price: "$400,000",
-    details: { beds: 4, baths: 3, sqft: 450, parking: 2 },
+    details: { 
+      beds: 4, 
+      baths: 3, 
+      sqft: 450, 
+      parking: 2,
+      propertyId: "21136",
+      lotSize: "2,500 ft2",
+      extraDetails: "pool",
+      structureType: "Concrete",
+      rooms: 3,
+      customId: "124",
+      garageSize: "25 cars",
+      roofing: "old",
+      floorsNo: 2,
+      propertySize: "2,000 ft2",
+      garages: 25,
+      availableFrom: "2018-02-15",
+      exteriorMaterial: "stone"
+    },
     financials: { tokenPrice: "$60", projectedIRR: "28.5%", projectedAPR: "18.2%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2005,
     agent: {
       name: "Jane Smith",
       image: "../assets/agents/image.png",
       phone: "+1 345 678 901",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 3,
@@ -44,13 +111,47 @@ const cards = [
     title: "Sunset Hills",
     location: "USA, Arizona",
     price: "$350,000",
-    details: { beds: 2, baths: 2, sqft: 300, parking: 1 },
+    details: { 
+      beds: 2, 
+      baths: 2, 
+      sqft: 300, 
+      parking: 1,
+      propertyId: "21137",
+      lotSize: "1,800 ft2",
+      extraDetails: "patio",
+      structureType: "Brick",
+      rooms: 2,
+      customId: "125",
+      garageSize: "15 cars",
+      roofing: "new",
+      floorsNo: 1,
+      propertySize: "1,700 ft2",
+      garages: 15,
+      availableFrom: "2019-03-20",
+      exteriorMaterial: "wood"
+    },
     financials: { tokenPrice: "$45", projectedIRR: "24.7%", projectedAPR: "15.8%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2010,
     agent: {
       name: "Alice Johnson",
       image: "../assets/agents/agent02.webp",
       phone: "+1 456 789 012",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 4,
@@ -59,13 +160,47 @@ const cards = [
     title: "Ocean View",
     location: "USA, Florida",
     price: "$450,000",
-    details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
+    details: { 
+      beds: 3, 
+      baths: 2, 
+      sqft: 400, 
+      parking: 2,
+      propertyId: "21138",
+      lotSize: "2,200 ft2",
+      extraDetails: "balcony",
+      structureType: "Steel",
+      rooms: 3,
+      customId: "126",
+      garageSize: "30 cars",
+      roofing: "new",
+      floorsNo: 2,
+      propertySize: "2,100 ft2",
+      garages: 30,
+      availableFrom: "2020-04-25",
+      exteriorMaterial: "glass"
+    },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2015,
     agent: {
       name: "Bob Brown",
       image: "../assets/agents/image.png",
       phone: "+1 567 890 123",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 5,
@@ -74,13 +209,47 @@ const cards = [
     title: "Ocean View",
     location: "USA, Florida",
     price: "$450,000",
-    details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
+    details: { 
+      beds: 3, 
+      baths: 2, 
+      sqft: 400, 
+      parking: 2,
+      propertyId: "21139",
+      lotSize: "2,300 ft2",
+      extraDetails: "deck",
+      structureType: "Wood",
+      rooms: 3,
+      customId: "127",
+      garageSize: "20 cars",
+      roofing: "old",
+      floorsNo: 2,
+      propertySize: "2,200 ft2",
+      garages: 20,
+      availableFrom: "2021-05-30",
+      exteriorMaterial: "brick"
+    },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2018,
     agent: {
       name: "Charlie Davis",
       image: "../assets/agents/image.png",
       phone: "+1 678 901 234",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 6,
@@ -89,13 +258,47 @@ const cards = [
     title: "Ocean View",
     location: "USA, Florida",
     price: "$450,000",
-    details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
+    details: { 
+      beds: 3, 
+      baths: 2, 
+      sqft: 400, 
+      parking: 2,
+      propertyId: "21140",
+      lotSize: "2,400 ft2",
+      extraDetails: "garden",
+      structureType: "Concrete",
+      rooms: 3,
+      customId: "128",
+      garageSize: "25 cars",
+      roofing: "new",
+      floorsNo: 3,
+      propertySize: "2,300 ft2",
+      garages: 25,
+      availableFrom: "2022-06-10",
+      exteriorMaterial: "stone"
+    },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2020,
     agent: {
       name: "Eve White",
       image: "../assets/agents/agent02.webp",
       phone: "+1 789 012 345",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
   {
     id: 7,
@@ -104,13 +307,47 @@ const cards = [
     title: "Ocean View",
     location: "USA, Florida",
     price: "$450,000",
-    details: { beds: 3, baths: 2, sqft: 400, parking: 2 },
+    details: { 
+      beds: 3, 
+      baths: 2, 
+      sqft: 400, 
+      parking: 2,
+      propertyId: "21141",
+      lotSize: "2,500 ft2",
+      extraDetails: "patio",
+      structureType: "Brick",
+      rooms: 3,
+      customId: "129",
+      garageSize: "30 cars",
+      roofing: "new",
+      floorsNo: 2,
+      propertySize: "2,400 ft2",
+      garages: 30,
+      availableFrom: "2023-07-15",
+      exteriorMaterial: "wood"
+    },
     financials: { tokenPrice: "$55", projectedIRR: "27.5%", projectedAPR: "17.5%" },
+    updateDate: "December 23, 2023",
+    yearBuilt: 2022,
     agent: {
       name: "Bob Brown",
       image: "../assets/agents/image.png",
       phone: "+1 567 890 123",
     },
+    address: {
+      street: "City Center no 8",
+      city: "Jersey City",
+      area: "Greenville",
+      state: "New Jersey State",
+      zip: "19009",
+      country: "United States",
+    },
+    features: {
+      interiorDetails: ["Equipped Kitchen", "Gym", "Laundry", "Media Room"],
+      outdoorDetails: ["Back yard", "Basketball court", "Front yard", "Garage Attached", "Hot Bath", "Pool"],
+      utilities: ["Central Air", "Electricity", "Heating", "Natural Gas", "Ventilation", "Water"],
+      otherFeatures: ["Chair Accessible", "Elevator", "Fireplace", "Smoke detectors", "Washer and dryer", "WiFi"]
+    }
   },
 ];
 

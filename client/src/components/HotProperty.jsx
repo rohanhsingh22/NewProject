@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { useNavigate } from 'react-router-dom';
 import cards from "./data/cards";
 
 export default function PropertyCarousel() {
@@ -16,6 +17,7 @@ export default function PropertyCarousel() {
   const [showRightButton, setShowRightButton] = useState(true);
   const [isTabletOrMobile, setIsTabletOrMobile] = useState(false);
   const [favorites, setFavorites] = useState({});
+  const navigate = useNavigate();
 
   const toggleFavorite = (id, event) => {
     event.stopPropagation(); // Prevent card click when clicking the favorite icon
@@ -95,8 +97,8 @@ export default function PropertyCarousel() {
     }
   };
 
-  const handleCardClick = (link) => {
-    navigate(link); // Navigate to the property details page
+  const handleCardClick = (id) => {
+    navigate(`/property/${id}`); // Navigate to the property details page
   };
 
   return (
@@ -131,11 +133,12 @@ export default function PropertyCarousel() {
         {cards.map((card) => (
           <div
             key={card.id}
+            onClick={() => handleCardClick(card.id)}
             className={`${
               isTabletOrMobile
                 ? "w-[90%] max-w-[400px] mx-auto"
                 : "min-w-[300px] sm:min-w-[380px] max-w-[300px] sm:max-w-[380px]"
-            } rounded-3xl h-[450px] w-[350px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10  bg-white`}
+            } rounded-3xl h-[450px] w-[350px] flex flex-col  mt-5 shadow-lg shadow-gray-400 mb-10  bg-white cursor-pointer`}
           >
             <div
               className="relative h-64 bg-cover bg-center rounded-t-3xl "
@@ -181,24 +184,6 @@ export default function PropertyCarousel() {
                   <FaCar /> <span>{card.details.parking}</span>
                 </div>
               </div>
-              {/* <div className="flex justify-between border border-gray-300 p-2 rounded-lg bg-gray-100 text-black text-sm mt-3">
-                <div>
-                  <p className="font-semibold">Token price</p>
-                  <p className="text-blue-500">{card.financials.tokenPrice}</p>
-                </div>
-                <div>
-                  <p className="font-semibold">Projected IRR</p>
-                  <p className="text-blue-500">
-                    {card.financials.projectedIRR}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold">Projected APR</p>
-                  <p className="text-blue-500">
-                    {card.financials.projectedAPR}
-                  </p>
-                </div>
-              </div> */}
               <div className="flex items-center justify-between mt-4">
                 <div className="flex items-center">
                   <img
@@ -208,7 +193,6 @@ export default function PropertyCarousel() {
                   />
                   <div className="ml-2">
                     <p className="text-sm font-semibold">{card.agent.name}</p>
-                    {/* <p className="text-xs text-gray-500">Real Estate Agent</p> */}
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
