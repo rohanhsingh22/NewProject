@@ -1,10 +1,21 @@
 import { useState } from "react";
 import { FaUser, FaBars, FaTimes } from "react-icons/fa";
-import SignIn from "./SignIn"; // Ensure correct import path
+import SignIn from "./SignIn";
+import RegistrationForm from "./RegistrationForm";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoginOpen, setIsLoginOpen] = useState(false); // State for SignIn modal
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isRegistering, setIsRegistering] = useState(false);
+
+  const handleCloseAuth = () => {
+    setIsLoginOpen(false);
+    setIsRegistering(false);
+  };
+
+  const toggleAuthMode = () => {
+    setIsRegistering(!isRegistering);
+  };
 
   return (
     <header className="fixed top-0 w-full bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 py-1">
@@ -25,7 +36,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           {/* Login Icon (Opens SignIn Modal) */}
           <button
-            onClick={() => setIsLoginOpen(true)} // Open SignIn form
+            onClick={() => setIsLoginOpen(true)}
             className="text-gray-700 hover:text-gray-900 text-xl"
           >
             <FaUser />
@@ -52,8 +63,13 @@ const Header = () => {
         </div>
       )}
 
-      {/* SignIn Modal */}
-      {isLoginOpen && <SignIn onClose={() => setIsLoginOpen(false)} />}
+      {/* Auth Modals */}
+      {isLoginOpen && !isRegistering && (
+        <SignIn onClose={handleCloseAuth} onToggle={toggleAuthMode} />
+      )}
+      {isLoginOpen && isRegistering && (
+        <RegistrationForm onClose={handleCloseAuth} onToggle={toggleAuthMode} />
+      )}
     </header>
   );
 };
